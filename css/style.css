@@ -1,12 +1,10 @@
 
-/* PRIMERA PARTE */
+/* PRIMERA PARTE HEADER Y BANNER PRINCIPAL */
 
 *{  /* En esta primera parte con margin 0 y un padding de 0 integro las cajas para que no me queden espacios entre ellas */
     margin: 0;
     padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    font-size: 100%;
+    box-sizing: border-box;
 } 
 
 body {
@@ -29,6 +27,7 @@ section.topheader { /*identifico como topheader al cabezal de color negro donde 
     top:0%;
     position: relative;
     box-sizing: border-box;
+    heigh
 }
 
 h6.bannerOfertas{
@@ -57,7 +56,7 @@ section.cabezal { /*identifico como cabezal a la seccion donde esta el logotipo 
     justify-content: space-between;
     align-items: center;
     background-color: orange;
-    height: 66px;
+    height: 63px;
     position: relative;
     box-sizing: border-box;
 }
@@ -106,6 +105,7 @@ li.nav:hover { /* esta es una opci[on que encontr[e en youtube para darle un efe
     background-size: cover;
     position: relative;
     box-sizing: border-box;
+
 }
 
 .placer{
@@ -157,4 +157,91 @@ li.nav:hover { /* esta es una opci[on que encontr[e en youtube para darle un efe
     background-color: orange;
     position: relative;
     box-sizing: border-box;
+}
+
+/* SEGUNDA PARTE CAJAS CONTENEDORAS */
+
+section.subBanner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px ;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+article.nameSubBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+span.productosDestacados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3C2313;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    box-sizing: border-box;
+}
+
+article.patita{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+section.carrito-compras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600px ;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+
+article.churrasquito{
+    display: flex;
+    align-self: center;
+    border-radius: 5px;
+    border: solid 1px whitesmoke;
+    position: relative;
+    box-sizing: border-box;
+}
+
+article.elcomedero{
+    display: flex;
+    align-self: center;
+    border-radius: 5px;
+    border: solid 1px whitesmoke;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+article.huesito{
+    display: flex;
+    align-self: center;
+    border-radius: 5px;
+    border: solid 1px whitesmoke;
+    position: relative;
+    box-sizing: border-box;
+
 }
