@@ -4,17 +4,19 @@
 *{  /* En esta primera parte con margin 0 y un padding de 0 integro las cajas para que no me queden espacios entre ellas */
     margin: 0;
     padding: 0;
-    border: 0px;
+    border: 0;
     vertical-align: baseline;
     font-size: 100%;
 } 
 
-
-body{ /*tengo que revisar la implementacion de las fuentes*/
-font-family: 'futura';
-src: url ('../font/FuturaStd-light.otf');
+body {
 background-color: gainsboro;
+@font-face { /*tengo que revisar la implementacion de las fuentes porque no me funciona*/
+font-family: 'miFutura';
+src: url('../font/FuturaStd-Heavy.otf');
 }
+}
+
 
 section.topheader { /*identifico como topheader al cabezal de color negro donde se encuentra la barra de idiomas*/
     display:flex;
@@ -29,12 +31,33 @@ section.topheader { /*identifico como topheader al cabezal de color negro donde 
     box-sizing: border-box;
 }
 
+h6.bannerOfertas{
+    font-weight: lighter;
+    margin-right: 50px;
+    padding: 23px 20px;
+}
+
+span.idiomas{
+    display: flex;
+    color: white;
+    font-size: 10px;
+    justify-content: space-between;
+    align-items: center;
+    right: -1500px; /* por que en negativo */
+    text-transform: uppercase;
+    margin-right: 10px;
+    padding: 23px 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
 section.cabezal { /*identifico como cabezal a la seccion donde esta el logotipo y la barra del navegador */
     display:flex;
     justify-content: space-between;
     align-items: center;
     background-color: orange;
-    height: 63px;
+    height: 66px;
     position: relative;
     box-sizing: border-box;
 }
@@ -46,6 +69,7 @@ p.tipo{ /* tipo es la parte tipo del logo en este caso es el PETSHOP */
     text-transform: uppercase;
     color: white;
     font-size: 25px;
+    font-weight: bold;
     left: 50px;
     position: relative;
     box-sizing: border-box;
@@ -109,7 +133,7 @@ li.nav:hover { /* esta es una opci[on que encontr[e en youtube para darle un efe
     width: 365px;
     height: 50px;
     color: black;   
-    font-weight:400px;
+    font-weight:lighter;
     font-size: 20px;
     left: 1030px;
     top: 300px;
@@ -121,13 +145,14 @@ li.nav:hover { /* esta es una opci[on que encontr[e en youtube para darle un efe
     display:flex;
     justify-content:center;
     align-items: center;
-    width: 200px;
+    width: 220px;
     height: 50px;
     color: white;
+    text-transform: uppercase;
     border-radius: 5px;   
-    font-weight:400px;
+    font-weight:bolder;
     font-size: 30px;
-    left: 750px;
+    left: 740px;
     top: 360px;
     background-color: orange;
     position: relative;
